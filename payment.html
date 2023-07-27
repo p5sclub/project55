@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment form</title>
+    <link rel="stylesheet" href="JS/css/index.css">
+</head>
+<body>
+    <form id="paymentForm">
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email-address" required />
+        </div>
+        <div class="form-group">
+          <label for="Product name">Product name</label>
+          <input type="text" id="Product name" />
+        </div>
+        <div class="form-group">
+          <label for="amount">Amount</label>
+          <input type="tel" id="amount" required />
+        </div>
+        <div class="form-group">
+          <label for="first-name">First Name</label>
+          <input type="text" id="first-name" />
+        </div>
+        <div class="form-group">
+          <label for="last-name">Last Name</label>
+          <input type="text" id="last-name" />
+        </div>
+        <div class="form-group">
+          <label for="Phone-number">Phone Number</label>
+          <input type="text" id="Phone-number" />
+        </div>
+        <div class="form-submit">
+          <button type="submit" onclick="payWithPaystack()"> Pay </button>
+        </div>
+
+        <div id="Warning" class="section"> Warning: Make sure you write the total amount (price) & product names of
+          goods you added on your cart page, if you put in the wrong amount, 
+          your payment will not be authorised by our staff.
+        </div>
+        <a href="#" class="ss-btn" onclick="window.location.href='index.html';">Back To Homepage</a>
+      </form>
+      
+      
+      <script src="https://js.paystack.co/v1/inline.js"></script> 
+      <script src="JS/payment.js"></script>
+      
+</body>
+</html>

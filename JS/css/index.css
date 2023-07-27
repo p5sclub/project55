@@ -1,0 +1,85 @@
+:root {
+  --main-color: #fd4646;
+  --text-color: #02ac70;
+  --bg-color: #fff;
+  --container-color: #1e1e2a;
+}
+.section-p1 {
+  padding: 40px 80px;
+}
+section{
+  padding: 4rem 0 3rem;
+}
+/* Styling for form container */
+#paymentForm {
+    width: 300px;
+    margin: 0 auto;
+  }
+  
+  /* Styling for form groups */
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  /* Styling for labels */
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  /* Styling for input fields */
+  input[type="email"],
+  input[type="tel"],
+  input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Styling for submit button */
+  button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #45a049;
+  }
+
+  .ss-btn{
+    position: relative;
+    padding: 12px 20px;
+    border-radius: 2rem;
+    background: var(--text-color);
+    color: var(--bg-color);
+    font-size: 1rem;
+    font-weight: 500;
+    top: 50px;
+    left: 0px;
+}
+  
+  /* Making Responsive */
+@media (max-width: 1080px){
+  section{
+      padding: 3rem 0 2rem;
+  }
+  .warning {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: start;
+  }
+  }
+
+  @media (max-width: 477px) {
+    .section-p1 {
+      padding: 20px;
+  }
+  
+  }
